@@ -27,7 +27,7 @@ if [ -z "$DEPLOY_TASKS" ]; then
 fi
 
 echo "-----> gem install bundler"
-gem install bundler
+gem install bundler --no-rdoc --no-ri
 
 tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
